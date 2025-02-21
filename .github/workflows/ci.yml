@@ -39,8 +39,8 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: run golangci-lint
-      uses: golanci-lint/golangci-lint-action@v2
+    - name: Run golangci-lint
+      uses: golangci/golangci-lint-action@v6
       with:
         version: v1.56.2
   
@@ -87,7 +87,7 @@ jobs:
 
     - name: Commit and push changes
       run: |
-        git config --global user.email "sabbas88@yahoo.co.im"
+        git config --global user.email "sabbas88@yahoo.co.in"
         git config --global user.name "saabbas88"
         git add helm/go-web-app-chart/values.yaml
         git commit -m "Update tag in Helm chart"
