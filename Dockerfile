@@ -6,7 +6,7 @@ COPY . .
 RUN go build -o main .
 
 # final Stage - Distroless image
-FROM gcr.io/distroless/BASE
+FROM gcr.io/distroless/base
 COPY --from=base /app/main .
 COPY --from=base /app/static ./static
 EXPOSE 8080
