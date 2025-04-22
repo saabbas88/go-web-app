@@ -11,4 +11,4 @@ COPY --from=base /app/main .
 COPY --from=base /app/static ./static
 EXPOSE 8080
 
-C<D ["./main"]
+CD ["./main"]
