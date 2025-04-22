@@ -16,5 +16,5 @@ spec:
         backend:
           service:
             name: go-web-app
-            port:
+             port:
               number: 80
